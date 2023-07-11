@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="p-3 mb-2 bg-info-subtle text-emphasis-info">
+    <div class="container">
+        <form action="/process" method="post">
+            <div>
+                <h1>Dojo Survey</h1>
+            </div>
+            <label for="exampleFormControlTextarea1 ">Name</label>
+            <input name="name" class="form-group">
+            </input>
+            <!-- <div class="form-check form-check-inline">
+                <h5>Gender</h5>
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Perfer not to say</label>
+            </div> -->
+            <div>
+                <label>Where were you born?</label>
+                <select name="location" class="form-select" aria-label="Default select example ">
+                    <option selected>Dojo Location</option>
+                    <option value="Denver">Denver</option>
+                    <option value="Salt Lake City">Salt Lake City</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Pheonix">Phoenix</option>
+                    <option value="Seattle">Seattle</option>
+                </select>
+            </div>
+            <div>
+                <label>Whats your favorite language?</label>
+                <select name="language" class="form-select" aria-label="Default select example">
+                    <option selected>Favorite Language</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div>
+                <label>Tell us about youself!</label>
+                <input name="comments" class="form-control" type="text" placeholder="Default input">
+            </div>
+            <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Yes! I would like to recieve text message updates.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Yes! I would like to recieve email message updates.
+                </label>
+            </div> -->
+            <div><button class="btn btn-primary" type=submit>Submit!</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>

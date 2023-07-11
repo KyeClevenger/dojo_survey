@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Submit</title>
+
+</head>
+
+<body class="bg-info p-2 text-white">
+    <h1 class="text-center grid gap-0 row-gap-3 flex-column mb-3v">Dojo Survey</h1>
+    <table class="table table-dark shadow-lg p-3 mb-5 bg-body-tertiary rounded grid gap-0 row-gap-3 border">
+        <thead class="table-dark">
+            <td class="p-2 g-col-6 text-center grid gap-0 row-gap-3 flex-column mb-3 border-top">Here are your results!</td>
+        </thead>
+        <tbody>
+            <td class="p-2 g-col-6 border-top">{{session.name}}</td>
+            <td class="p-2 g-col-6 border-top">{{session.location}}</td>
+            <td class="p-2 g-col-6 border-top">{{session.language}}</td>
+            <div>
+                <td class="p-2 g-col-6 border-top">{{session.comments}}</td>
+            </div>
+        </tbody>
+    </table>
+</body>
+
+</html>
